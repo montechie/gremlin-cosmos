@@ -3,6 +3,7 @@
   "version": "0.0.14",
   "description": "A Node.js Gremlin API compatible with Cosmos DB",
   "main": "dist/index.js",
+    "types": "dist/types.d.ts",
   "repository": "https://github.com/montechie/gremlin-cosmos.git",
   "author": "Zach Posten <zach@posten.io>",
   "license": "MIT",
