@@ -16,7 +16,7 @@
     "prepub": "yarn test && yarn build && yarn version",
     "pub": "npm publish",
     "postpub": "git push && git push --tags",
-      "postinstall": "cd ./node_modules/gremlin-cosmos && npm install && npm run build"
+      "prepare": "npm run build"
   },
   "dependencies": {
     "gremlin": "^3.5.1",
