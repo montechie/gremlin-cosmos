@@ -1,9 +1,9 @@
 {
   "name": "gremlin-cosmos",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A Node.js Gremlin API compatible with Cosmos DB",
   "main": "dist/index.js",
-  "repository": "https://github.com/zposten/gremlin-cosmos",
+  "repository": "https://github.com/montechie/gremlin-cosmos.git",
   "author": "Zach Posten <zach@posten.io>",
   "license": "MIT",
   "files": [
@@ -15,7 +15,8 @@
     "test": "jest",
     "prepub": "yarn test && yarn build && yarn version",
     "pub": "npm publish",
-    "postpub": "git push && git push --tags"
+    "postpub": "git push && git push --tags",
+      "postinstall": "cd ./node_modules/gremlin-cosmos && npm install && npm run build"
   },
   "dependencies": {
     "gremlin": "^3.5.1",
