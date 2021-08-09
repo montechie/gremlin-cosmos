@@ -23,7 +23,6 @@ export type GremlinResponse<T = GremlinNode> = {
     'x-ms-total-server-time-ms': number
     'x-ms-activity-id': string
   }
-  toArray: Function
 }
 
 export type Index = {[key: string]: string | number | boolean}

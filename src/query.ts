@@ -13,6 +13,11 @@ export class Query {
     return this.query
   }
 
+  /** Get the array representation of the query. */
+  toArray() {
+      return this.query
+  }
+
   //////////////////////
   // Start steps
   /////////////////////
@@ -128,6 +133,12 @@ export class Query {
   values(...keys: string[]) {
     this.query += `.values(${quoteAndCombine(keys)})`
     return this
+  }
+
+  /** Maps the key value pairs */
+  elementMap() {
+      this.query += `.elementMap()`
+      return this
   }
 
   //////////////////////
