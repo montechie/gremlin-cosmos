@@ -13,7 +13,7 @@ export type GremlinNode = {
 }
 
 export type GremlinResponse<T = GremlinNode> = {
-  items: T[]
+  _items: T[]
   length: number
   attributes: {
     'x-ms-status-code': number
